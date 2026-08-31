@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- corpo do aparelho -->
+  <rect x="8" y="18" width="48" height="18" rx="4" fill="#fff"/>
+  <!-- faixa frontal (saída de ar) -->
+  <rect x="8" y="29" width="48" height="7" rx="3" fill="#E9262C"/>
+  <line x1="14" y1="24" x2="50" y2="24" stroke="#28295F" stroke-width="2" stroke-linecap="round"/>
+  <!-- ar saindo (3 correntes) -->
+  <g stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M18 42c3 2 3 5 0 7"/>
+    <path d="M32 44c3 2 3 5 0 7"/>
+    <path d="M46 42c3 2 3 5 0 7"/>
+  </g>
+</svg>
