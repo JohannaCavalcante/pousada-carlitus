@@ -352,7 +352,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8 mb-12">
                     <!-- Serviço 1 -->
                     <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100 flex flex-col">
-                        <img src="IMG/cama-de-casal-premium.png" alt="Quarto premium com ar-condicionado na Pousada Carlitus" class="w-full h-56 object-cover">
+                        <img src="IMG/cama-de-casal-premium.webp" alt="Quarto premium com ar-condicionado na Pousada Carlitus" class="w-full h-56 object-cover">
                         <div class="p-8 flex-1 flex flex-col">
                             <h3 class="text-xl font-bold text-secondary mb-3">Quarto Premium</h3>
                             <p class="text-gray-600 mb-6 flex-1">Nosso quarto mais completo, com ar-condicionado para você dormir com todo o conforto mesmo nos dias mais quentes. Ideal para casais e famílias que buscam uma estadia tranquila e refrescante, a poucos passos do mar.</p>
@@ -391,7 +391,7 @@
                     <p class="text-gray-600 max-w-2xl mx-auto">Espaços pensados para o seu conforto e descanso, a poucos passos do mar.</p>
                 </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     <template x-for="(foto, index) in fotos" :key="index">
                         <button type="button" @click="abrir(index)" class="group block overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
                             <img :src="foto.src" :alt="foto.alt" loading="lazy" class="w-full h-44 md:h-56 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -732,19 +732,18 @@
                 atual: 0,
                 toqueInicio: 0,
                 fotos: [
+                    { src: 'IMG/pousada-pe-na-areia.webp', alt: 'Terraço pé na areia com vista para o mar' },
+                    { src: 'IMG/are-rede.webp', alt: 'Redes de descanso com vista para o mar' },
+                    { src: 'IMG/entrada-mar.webp', alt: 'Vista para a praia a partir da pousada' },
                     { src: 'IMG/pousada-carlitus-faixada.webp', alt: 'Fachada da Pousada Carlitus na Praia de Atalaia' },
-                    { src: 'IMG/are-rede.webp', alt: 'Área de descanso com redes e vista para o mar' },
-                    { src: 'IMG/entrada-mar.webp', alt: 'Vista para a praia a partir da Pousada Carlitus' },
-                    { src: 'IMG/pousada-pe-na-areia.webp', alt: 'Terraço amplo pé na areia da Pousada Carlitus' },
                     { src: 'IMG/pousada-mar-cafe.webp', alt: 'Café da manhã da Pousada Carlitus' },
-                    { src: 'IMG/som-de-mar.webp', alt: 'Salão de refeições da Pousada Carlitus' },
-                    { src: 'IMG/pousada-churrasqueira.webp', alt: 'Área de churrasqueira e forno da Pousada Carlitus' },
+                    { src: 'IMG/som-de-mar.webp', alt: 'Salão de refeições da pousada' },
+                    { src: 'IMG/pousada-churrasqueira.webp', alt: 'Área de churrasqueira e forno' },
                     { src: 'IMG/pousada-carlitus-recepcao.webp', alt: 'Recepção da Pousada Carlitus' },
                     { src: 'IMG/pousada-corredor-quartos.webp', alt: 'Corredor dos quartos com jardim' },
-                    { src: 'IMG/pousada-entrada.webp', alt: 'Jardim de entrada da Pousada Carlitus' },
+                    { src: 'IMG/pousada-entrada.webp', alt: 'Jardim de entrada com placa de boas-vindas' },
                     { src: 'IMG/quarto-premium-interno.webp', alt: 'Quarto premium com ar-condicionado' },
-                    { src: 'IMG/quarto-rustico.webp', alt: 'Quarto rústico com ventilador' },
-                    { src: 'IMG/quarto-ventilador.webp', alt: 'Quarto com ventilador' }
+                    { src: 'IMG/quarto-ventilador.webp', alt: 'Quarto rústico com ventilador' }
                 ],
                 abrir(i) {
                     this.atual = i;
