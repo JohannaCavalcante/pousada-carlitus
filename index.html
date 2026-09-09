@@ -11,7 +11,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Pousada Praia de Atalaia, Luís Correia | Pé na Areia">
     <meta property="og:description" content="Descanse com sua família no litoral piauiense na Pousada Carlitus. Hospedagem pé na areia com quartos limpos, seguros, ar-condicionado e café da manhã.">
-    <meta property="og:image" content="https://pousadacarlitus.com/assets/img/hero-pousada-carlitus.jpg">
+    <meta property="og:image" content="https://pousadacarlitus.com/IMG/pousada-de-frente-mar.png">
     <meta property="og:url" content="https://pousadacarlitus.com/">
     <meta property="og:type" content="website">
 
@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pousada Praia de Atalaia, Luís Correia | Pé na Areia">
     <meta name="twitter:description" content="Descanse com sua família no litoral piauiense na Pousada Carlitus. Hospedagem pé na areia com quartos limpos, seguros, ar-condicionado e café da manhã.">
-    <meta name="twitter:image" content="https://pousadacarlitus.com/assets/img/hero-pousada-carlitus.jpg">
+    <meta name="twitter:image" content="https://pousadacarlitus.com/IMG/pousada-de-frente-mar.png">
     
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
@@ -247,6 +247,7 @@
                 <a href="#hero" class="hover:text-primary transition-colors">Início</a>
                 <a href="#sobre" class="hover:text-primary transition-colors">Quem Somos</a>
                 <a href="#servicos" class="hover:text-primary transition-colors">Acomodações</a>
+                <a href="#galeria" class="hover:text-primary transition-colors">Galeria</a>
                 <a href="#area-atuacao" class="hover:text-primary transition-colors">Localização</a>
                 <a href="#faq" class="hover:text-primary transition-colors">FAQ</a>
             </nav>
@@ -269,6 +270,7 @@
                 <a href="#hero" @click="mobileMenuOpen = false" class="hover:text-primary">Início</a>
                 <a href="#sobre" @click="mobileMenuOpen = false" class="hover:text-primary">Quem Somos</a>
                 <a href="#servicos" @click="mobileMenuOpen = false" class="hover:text-primary">Acomodações</a>
+                <a href="#galeria" @click="mobileMenuOpen = false" class="hover:text-primary">Galeria</a>
                 <a href="#area-atuacao" @click="mobileMenuOpen = false" class="hover:text-primary">Localização</a>
                 <a href="#faq" @click="mobileMenuOpen = false" class="hover:text-primary">FAQ</a>
                 <a href="https://wa.me/5586988226591" class="text-primary font-bold mt-2">WhatsApp</a>
@@ -278,7 +280,7 @@
 
     <main>
         <!-- 1. Hero Section -->
-        <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20" style="background-image: url('/assets/img/hero-pousada-carlitus.jpg'); background-size: cover; background-position: center;">
+        <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20" style="background-image: url('IMG/pousada-de-frente-mar.png'); background-size: cover; background-position: center;">
             <div class="absolute inset-0 hero-gradient"></div>
             <div class="relative z-10 container mx-auto px-4 text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto leading-tight">Pousada na Praia de Atalaia em Luís Correia: Hospedagem Pé na Areia</h1>
@@ -313,7 +315,7 @@
         <section id="sobre" class="py-20 bg-gray-50">
             <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <img src="/assets/img/vista-pousada-mar.jpg" alt="Área externa da Pousada Carlitus com vista para o mar da Praia de Atalaia" class="rounded-2xl shadow-2xl w-full h-auto object-cover aspect-video">
+                    <img src="IMG/area-externa.png" alt="Área externa da Pousada Carlitus com vista para o mar da Praia de Atalaia" class="rounded-2xl shadow-2xl w-full h-auto object-cover aspect-video">
                 </div>
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6 leading-tight">Por que escolher nossa pousada de frente para o mar?</h2>
@@ -341,7 +343,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8 mb-12">
                     <!-- Serviço 1 -->
                     <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100 flex flex-col">
-                        <img src="/assets/img/quarto-premium.jpg" alt="Quarto de casal confortável e climatizado na Pousada Carlitus" class="w-full h-56 object-cover">
+                        <img src="IMG/quarto-premium-duplo.png" alt="Quarto de casal confortável e climatizado na Pousada Carlitus" class="w-full h-56 object-cover">
                         <div class="p-8 flex-1 flex flex-col">
                             <h3 class="text-xl font-bold text-secondary mb-3">Nossas Acomodações</h3>
                             <p class="text-gray-600 mb-6 flex-1">Temos duas categorias: o quarto rústico, com ventilador e valor mais acessível, e o quarto premium, com ar-condicionado.</p>
@@ -353,10 +355,10 @@
                     
                     <!-- Serviço 2 -->
                     <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100 flex flex-col">
-                        <img src="/assets/img/area-comum-rede-vista-mar.jpg" alt="Área com redes para descanso de frente para o mar na Pousada Carlitus" class="w-full h-56 object-cover">
+                        <img src="IMG/quarto-rustico.png" alt="Área com redes para descanso de frente para o mar na Pousada Carlitus" class="w-full h-56 object-cover">
                         <div class="p-8 flex-1 flex flex-col">
-                            <h3 class="text-xl font-bold text-secondary mb-3">Pousada Pé na Areia</h3>
-                            <p class="text-gray-600 mb-6 flex-1">Comece o dia com o mar na sua frente e um café da manhã fresquinho incluso. Um clima acolhedor e familiar, a poucos passos da areia, pra você relaxar de verdade.</p>
+                            <h3 class="text-xl font-bold text-secondary mb-3">Quarto Rústico</h3>
+                            <p class="text-gray-600 mb-6 flex-1">Nosso quarto mais econômico, equipado com ventilador e o essencial para uma boa noite de sono. Ideal para quem busca conforto com o melhor custo-benefício, a poucos passos do mar.</p>
                             <a href="https://wa.me/5586988226591?text=Gostaria+de+ver+valores+da+Hospedaria" target="_blank" class="block text-center border-2 border-primary text-primary px-6 py-2 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors">
                                 Ver valores no WhatsApp
                             </a>
@@ -370,6 +372,47 @@
                     </a>
                 </div>
             </div>
+        </section>
+
+        <!-- 4.5. Galeria -->
+        <section id="galeria" class="py-20 bg-gray-50" x-data="galeria">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Conheça a Pousada Carlitus por dentro</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Espaços pensados para o seu conforto e descanso, a poucos passos do mar.</p>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    <template x-for="(foto, index) in fotos" :key="index">
+                        <button type="button" @click="abrir(index)" class="group block overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                            <img :src="foto.src" :alt="foto.alt" loading="lazy" class="w-full h-44 md:h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                        </button>
+                    </template>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="https://wa.me/5586988226591?text=Ol%C3%A1%21+Vi+as+fotos+da+Pousada+Carlitus+e+gostaria+de+saber+valores+e+disponibilidade." target="_blank" class="inline-block bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors shadow-lg">
+                        Reservar pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Lightbox -->
+            <template x-teleport="body">
+                <div x-show="aberto" x-cloak x-transition.opacity
+                     class="fixed inset-0 z-[999] bg-black bg-opacity-90 flex items-center justify-center"
+                     @click.self="fechar()"
+                     @keydown.window.escape="fechar()" @keydown.window.arrow-right="proxima()" @keydown.window.arrow-left="anterior()">
+                    <button type="button" @click="fechar()" aria-label="Fechar" class="absolute top-3 right-4 text-white text-4xl leading-none w-12 h-12 flex items-center justify-center hover:text-primary transition-colors">&times;</button>
+                    <button type="button" @click.stop="anterior()" aria-label="Imagem anterior" class="absolute left-2 md:left-6 text-white text-5xl leading-none w-12 h-12 flex items-center justify-center hover:text-primary transition-colors">&#8249;</button>
+                    <button type="button" @click.stop="proxima()" aria-label="Próxima imagem" class="absolute right-2 md:right-6 text-white text-5xl leading-none w-12 h-12 flex items-center justify-center hover:text-primary transition-colors">&#8250;</button>
+                    <img :src="fotos[atual].src" :alt="fotos[atual].alt"
+                         class="max-h-[85vh] max-w-[92vw] object-contain rounded-lg select-none"
+                         @click.stop
+                         @touchstart="toqueInicio = $event.changedTouches[0].screenX"
+                         @touchend="deslizar($event.changedTouches[0].screenX)">
+                </div>
+            </template>
         </section>
 
         <!-- 5. Benefícios -->
@@ -671,6 +714,53 @@
        aria-label="Falar no WhatsApp">
         <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
+
+    <!-- Galeria: dados e controle do lightbox -->
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('galeria', () => ({
+                aberto: false,
+                atual: 0,
+                toqueInicio: 0,
+                fotos: [
+                    { src: 'IMG/pousada-carlitus-faixada.png', alt: 'Fachada da Pousada Carlitus na Praia de Atalaia' },
+                    { src: 'IMG/are-rede.png', alt: 'Área de descanso com redes e vista para o mar' },
+                    { src: 'IMG/entrada-mar.png', alt: 'Vista para a praia a partir da Pousada Carlitus' },
+                    { src: 'IMG/pousada-pe-na-areia.png', alt: 'Terraço amplo pé na areia da Pousada Carlitus' },
+                    { src: 'IMG/pousada-mar-cafe.png', alt: 'Café da manhã da Pousada Carlitus' },
+                    { src: 'IMG/som-de-mar.png', alt: 'Salão de refeições da Pousada Carlitus' },
+                    { src: 'IMG/pousada-churrasqueira.png', alt: 'Área de churrasqueira e forno da Pousada Carlitus' },
+                    { src: 'IMG/pousada-carlitus-recepcao.png', alt: 'Recepção da Pousada Carlitus' },
+                    { src: 'IMG/pousada-corredor-quartos.png', alt: 'Corredor dos quartos com jardim' },
+                    { src: 'IMG/pousada-entrada.png', alt: 'Jardim de entrada da Pousada Carlitus' },
+                    { src: 'IMG/quarto-premium-interno.png', alt: 'Quarto premium com ar-condicionado' },
+                    { src: 'IMG/quarto-rustico.png', alt: 'Quarto rústico com ventilador' },
+                    { src: 'IMG/quarto-ventilador.png', alt: 'Quarto com ventilador' }
+                ],
+                abrir(i) {
+                    this.atual = i;
+                    this.aberto = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                fechar() {
+                    this.aberto = false;
+                    document.body.style.overflow = '';
+                },
+                proxima() {
+                    this.atual = (this.atual + 1) % this.fotos.length;
+                },
+                anterior() {
+                    this.atual = (this.atual - 1 + this.fotos.length) % this.fotos.length;
+                },
+                deslizar(fim) {
+                    const dif = fim - this.toqueInicio;
+                    if (Math.abs(dif) > 50) {
+                        dif < 0 ? this.proxima() : this.anterior();
+                    }
+                }
+            }));
+        });
+    </script>
 
     <!-- x-cloak style fix -->
     <style>
