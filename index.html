@@ -149,14 +149,6 @@
             },
             {
               "@type": "Question",
-              "name": "A pousada oferece um ambiente seguro para os hóspedes?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, prezamos por um ambiente extremamente familiar, seguro e limpo para que casais e famílias possam aproveitar a viagem com total tranquilidade."
-              }
-            },
-            {
-              "@type": "Question",
               "name": "Qual é a capacidade máxima dos chalés para famílias?",
               "acceptedAnswer": {
                 "@type": "Answer",
@@ -291,7 +283,8 @@
             <!-- Bloco de baixo: texto e botões sobre fundo azul claro -->
             <div class="bg-[#F0F6FB] text-brandText">
                 <div class="container mx-auto px-4 py-14 md:py-20 text-center">
-                    <h1 aria-label="Pousada na Praia de Atalaia em Luís Correia: Hospedagem Pé na Areia" class="text-3xl md:text-5xl font-bold mb-5 max-w-4xl mx-auto leading-tight">Seu refúgio de frente para o mar em Luís Correia</h1>
+                    <p class="text-red-700 font-bold uppercase tracking-widest text-sm md:text-base mb-3">Pousada Carlitus</p>
+                    <h1 aria-label="Pousada na Praia de Atalaia em Luís Correia: Hospedagem Pé na Areia" class="text-2xl md:text-5xl font-bold mb-5 max-w-5xl mx-auto leading-tight">Pousada Carlitus: seu refúgio de frente para o mar em Luís Correia</h1>
                     <p class="text-base md:text-lg mb-8 max-w-3xl mx-auto text-gray-600">
                         Conforto, café da manhã incluso e o mar logo ali, a poucos passos da areia.
                     </p>
@@ -569,12 +562,12 @@
                     <!-- FAQ 4 -->
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                         <button @click="activeAccordion = activeAccordion === 4 ? null : 4" class="w-full text-left px-6 py-5 font-bold text-secondary flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
-                            <span>A pousada oferece um ambiente seguro para os hóspedes?</span>
+                            <span>Qual é a capacidade máxima dos chalés para famílias?</span>
                             <span :class="{'rotate-180': activeAccordion === 4}" class="transition-transform duration-200 text-primary">▼</span>
                         </button>
                         <div x-show="activeAccordion === 4" x-collapse x-cloak>
                             <div class="px-6 pb-5 text-gray-600">
-                                Sim, prezamos por um ambiente extremamente familiar, seguro e limpo para que casais e famílias possam aproveitar a viagem com total tranquilidade.
+                                Temos configurações versáteis para acomodar diferentes tamanhos de grupos. Chame nossa equipe no WhatsApp para encontrarmos a melhor opção para sua família.
                             </div>
                         </div>
                     </div>
@@ -582,12 +575,12 @@
                     <!-- FAQ 5 -->
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                         <button @click="activeAccordion = activeAccordion === 5 ? null : 5" class="w-full text-left px-6 py-5 font-bold text-secondary flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
-                            <span>Qual é a capacidade máxima dos chalés para famílias?</span>
+                            <span>Tem bons restaurantes e barracas perto da Pousada Carlitus?</span>
                             <span :class="{'rotate-180': activeAccordion === 5}" class="transition-transform duration-200 text-primary">▼</span>
                         </button>
                         <div x-show="activeAccordion === 5" x-collapse x-cloak>
                             <div class="px-6 pb-5 text-gray-600">
-                                Temos configurações versáteis para acomodar diferentes tamanhos de grupos. Chame nossa equipe no WhatsApp para encontrarmos a melhor opção para sua família.
+                                Nossa localização é excelente para a gastronomia. Estamos em frente e a poucos metros dos restaurantes mais bem avaliados da orla da Praia de Atalaia.
                             </div>
                         </div>
                     </div>
@@ -595,12 +588,12 @@
                     <!-- FAQ 6 -->
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                         <button @click="activeAccordion = activeAccordion === 6 ? null : 6" class="w-full text-left px-6 py-5 font-bold text-secondary flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
-                            <span>Tem bons restaurantes e barracas perto da Pousada Carlitus?</span>
+                            <span>Como faço para saber o valor da diária e a disponibilidade?</span>
                             <span :class="{'rotate-180': activeAccordion === 6}" class="transition-transform duration-200 text-primary">▼</span>
                         </button>
                         <div x-show="activeAccordion === 6" x-collapse x-cloak>
                             <div class="px-6 pb-5 text-gray-600">
-                                Nossa localização é excelente para a gastronomia. Estamos em frente e a poucos metros dos restaurantes mais bem avaliados da orla da Praia de Atalaia.
+                                Os valores variam conforme a época do ano. Basta clicar no botão de WhatsApp do site, informar suas datas e nossa equipe passará o orçamento completo.
                             </div>
                         </div>
                     </div>
@@ -608,23 +601,10 @@
                     <!-- FAQ 7 -->
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                         <button @click="activeAccordion = activeAccordion === 7 ? null : 7" class="w-full text-left px-6 py-5 font-bold text-secondary flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
-                            <span>Como faço para saber o valor da diária e a disponibilidade?</span>
+                            <span>É possível fazer a reserva e o pagamento direto pelo WhatsApp?</span>
                             <span :class="{'rotate-180': activeAccordion === 7}" class="transition-transform duration-200 text-primary">▼</span>
                         </button>
                         <div x-show="activeAccordion === 7" x-collapse x-cloak>
-                            <div class="px-6 pb-5 text-gray-600">
-                                Os valores variam conforme a época do ano. Basta clicar no botão de WhatsApp do site, informar suas datas e nossa equipe passará o orçamento completo.
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 8 -->
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button @click="activeAccordion = activeAccordion === 8 ? null : 8" class="w-full text-left px-6 py-5 font-bold text-secondary flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
-                            <span>É possível fazer a reserva e o pagamento direto pelo WhatsApp?</span>
-                            <span :class="{'rotate-180': activeAccordion === 8}" class="transition-transform duration-200 text-primary">▼</span>
-                        </button>
-                        <div x-show="activeAccordion === 8" x-collapse x-cloak>
                             <div class="px-6 pb-5 text-gray-600">
                                 Sim! Todo o processo de agendamento e pagamento é feito de maneira segura, direta e sem burocracia através do nosso atendimento via WhatsApp.
                             </div>
