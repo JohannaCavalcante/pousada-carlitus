@@ -227,10 +227,11 @@
 <body class="antialiased">
 
     <!-- Navbar -->
-    <header x-data="{ mobileMenuOpen: false, scrolled: false }" 
+    <header x-data="{ mobileMenuOpen: false, scrolled: false }"
             @scroll.window="scrolled = (window.pageYOffset > 20)"
-            :class="{ 'bg-white shadow-md': scrolled, 'bg-transparent text-white': !scrolled, 'text-brandText': scrolled }"
-            class="fixed w-full top-0 z-50 transition-all duration-300">
+            :class="{ 'bg-white shadow-md': scrolled }"
+            class="fixed w-full top-0 z-50 transition-all duration-300 text-secondary"
+            style="border-bottom: 1px solid rgba(40,41,95,0.15);">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center">
                 <img src="/assets/img/logo-pousada-carlitus.png" alt="Logo da Pousada Carlitus em Luís Correia" class="h-12 w-auto bg-white rounded-lg p-1">
