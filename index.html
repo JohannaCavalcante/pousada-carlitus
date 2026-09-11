@@ -304,8 +304,8 @@
 
             <!-- Zona inferior: foto atual do hero, com os CTAs -->
             <div class="hero-photo relative h-[68vh] md:h-[60vh] min-h-[380px]" style="background-image: url('IMG/pousada-de-frente-para-praia.webp'); background-size: cover; background-position: center 40%; background-repeat: no-repeat;">
-                <!-- Fusão: a última cor do céu "derrete" sobre o topo da foto (faixa maior no desktop, onde o corte "cover" mostra menos céu da foto) -->
-                <div class="absolute inset-x-0 top-0 h-20 md:h-40" style="background: linear-gradient(to bottom, #79B4DF 0%, rgba(121,180,223,0) 100%);"></div>
+                <!-- Fusão: a última cor do céu "derrete" só sobre a faixa de céu da foto; no desktop a faixa é mais curta que antes para não tingir o telhado/estrutura -->
+                <div class="absolute inset-x-0 top-0 h-20 md:h-24" style="background: linear-gradient(to bottom, #79B4DF 0%, rgba(121,180,223,0) 100%);"></div>
 
                 <!-- Reforço de leitura para os botões, apenas na base da foto (mais escuro no mobile, onde os botões agora ficam sobre o piso) -->
                 <div class="hero-cta-backing absolute inset-x-0 bottom-0 pt-24 pb-8 md:pb-10" style="background: linear-gradient(to top, rgba(8,12,20,0.65) 0%, rgba(8,12,20,0) 100%);">
