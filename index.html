@@ -227,23 +227,21 @@
 <body class="antialiased">
 
     <!-- Navbar -->
-    <header x-data="{ mobileMenuOpen: false, scrolled: false }"
-            @scroll.window="scrolled = (window.pageYOffset > 20)"
-            :class="{ 'bg-white shadow-md': scrolled }"
-            class="fixed w-full top-0 z-50 transition-all duration-300 text-secondary"
-            style="border-bottom: 1px solid rgba(40,41,95,0.15);">
+    <header x-data="{ mobileMenuOpen: false }"
+            class="fixed w-full top-0 z-50 bg-white text-secondary"
+            style="border-bottom: 1px solid rgba(40,41,95,0.12); box-shadow: 0 4px 14px rgba(15,23,42,0.06);">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center">
                 <img src="/assets/img/logo-pousada-carlitus.png" alt="Logo da Pousada Carlitus em Luís Correia" class="h-12 w-auto bg-white rounded-lg p-1">
             </a>
             
             <nav class="hidden md:flex gap-6 font-medium">
-                <a href="#hero" class="hover:text-primary transition-colors">Início</a>
-                <a href="#sobre" class="hover:text-primary transition-colors">Quem Somos</a>
-                <a href="#servicos" class="hover:text-primary transition-colors">Acomodações</a>
-                <a href="#galeria" class="hover:text-primary transition-colors">Galeria</a>
-                <a href="#area-atuacao" class="hover:text-primary transition-colors">Localização</a>
-                <a href="#faq" class="hover:text-primary transition-colors">FAQ</a>
+                <a href="#hero" class="hover:text-red-700 transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-red-700 transition-colors">Quem Somos</a>
+                <a href="#servicos" class="hover:text-red-700 transition-colors">Acomodações</a>
+                <a href="#galeria" class="hover:text-red-700 transition-colors">Galeria</a>
+                <a href="#area-atuacao" class="hover:text-red-700 transition-colors">Localização</a>
+                <a href="#faq" class="hover:text-red-700 transition-colors">FAQ</a>
             </nav>
             
             <a href="https://wa.me/5586988226591?text=Ol%C3%A1%21+Estava+no+site+da+Pousada+Carlitus+e+gostaria+de+saber+os+valores+e+disponibilidade+para+me+hospedar+na+Praia+de+Atalaia." target="_blank" class="hidden md:inline-block bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition-colors shadow-lg">
@@ -261,12 +259,12 @@
         <!-- Mobile Menu -->
         <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-white text-brandText absolute w-full shadow-lg">
             <div class="flex flex-col px-4 pt-2 pb-6 gap-3 font-medium">
-                <a href="#hero" @click="mobileMenuOpen = false" class="hover:text-primary">Início</a>
-                <a href="#sobre" @click="mobileMenuOpen = false" class="hover:text-primary">Quem Somos</a>
-                <a href="#servicos" @click="mobileMenuOpen = false" class="hover:text-primary">Acomodações</a>
-                <a href="#galeria" @click="mobileMenuOpen = false" class="hover:text-primary">Galeria</a>
-                <a href="#area-atuacao" @click="mobileMenuOpen = false" class="hover:text-primary">Localização</a>
-                <a href="#faq" @click="mobileMenuOpen = false" class="hover:text-primary">FAQ</a>
+                <a href="#hero" @click="mobileMenuOpen = false" class="hover:text-red-700">Início</a>
+                <a href="#sobre" @click="mobileMenuOpen = false" class="hover:text-red-700">Quem Somos</a>
+                <a href="#servicos" @click="mobileMenuOpen = false" class="hover:text-red-700">Acomodações</a>
+                <a href="#galeria" @click="mobileMenuOpen = false" class="hover:text-red-700">Galeria</a>
+                <a href="#area-atuacao" @click="mobileMenuOpen = false" class="hover:text-red-700">Localização</a>
+                <a href="#faq" @click="mobileMenuOpen = false" class="hover:text-red-700">FAQ</a>
                 <a href="https://wa.me/5586988226591" class="text-primary font-bold mt-2">WhatsApp</a>
             </div>
         </div>
