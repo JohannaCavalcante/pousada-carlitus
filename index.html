@@ -59,6 +59,7 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; color: #111827; background-color: #FFFFFF; }
         h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Poppins', sans-serif; }
+        #hero h1, #hero p { text-shadow: 0 2px 14px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.4); }
     </style>
     <!-- JSON-LD Schemas -->
     <script type="application/ld+json">
@@ -273,31 +274,27 @@
 
     <main>
         <!-- 1. Hero Section -->
-        <section id="hero">
-            <!-- Bloco de cima: foto em destaque, sem overlay -->
-            <div class="w-full">
-                <img src="IMG/pousada-de-frente-para-praia.webp"
-                     alt="Área comum da Pousada Carlitus com rede e vista para o mar na Praia de Atalaia, Luís Correia"
-                     class="w-full h-[45vh] md:h-[60vh] object-cover object-[center_35%]">
-            </div>
-            <!-- Bloco de baixo: texto e botões sobre fundo azul claro -->
-            <div class="bg-[#F0F6FB] text-brandText">
-                <div class="container mx-auto px-4 py-14 md:py-20 text-center">
-                    <p class="text-red-700 font-bold uppercase tracking-widest text-sm md:text-base mb-3">Pousada Carlitus</p>
-                    <h1 aria-label="Pousada na Praia de Atalaia em Luís Correia: Hospedagem Pé na Areia" class="text-2xl md:text-5xl font-bold mb-5 max-w-5xl mx-auto leading-tight">Pousada Carlitus: seu refúgio de frente para o mar em Luís Correia</h1>
-                    <p class="text-base md:text-lg mb-8 max-w-3xl mx-auto text-gray-600">
-                        Conforto, café da manhã incluso e o mar logo ali, a poucos passos da areia.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <a href="https://wa.me/5586988226591?text=Ol%C3%A1%21+Estava+no+site+da+Pousada+Carlitus+e+gostaria+de+saber+os+valores+e+disponibilidade+para+me+hospedar+na+Praia+de+Atalaia." target="_blank" class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors shadow-xl w-full sm:w-auto text-center">
-                            Reservar pelo WhatsApp
-                        </a>
-                        <a href="#servicos" class="bg-white text-brandText border border-gray-300 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl w-full sm:w-auto text-center">
-                            Ver Acomodações
-                        </a>
-                    </div>
-                    <p class="mt-6 text-sm text-gray-500 font-medium">Reserva rápida, fácil e sem burocracia direto com nossa equipe.</p>
+        <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20" style="background-image: url('IMG/pousada-de-frente-para-praia.webp'); background-size: cover; background-position: center 35%; background-repeat: no-repeat;">
+            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(8,12,20,0.6) 0%, rgba(8,12,20,0.48) 50%, rgba(8,12,20,0.65) 100%);"></div>
+            <div class="relative z-10 container mx-auto px-4 text-center text-white">
+                <h1 aria-label="Pousada na Praia de Atalaia em Luís Correia: Hospedagem Pé na Areia" class="mb-5">
+                    <span class="block text-base md:text-xl font-semibold uppercase tracking-[0.35em] mb-1 md:mb-2">Pousada</span>
+                    <span class="block text-5xl sm:text-6xl md:text-8xl font-extrabold uppercase tracking-wide leading-none">Carlitus</span>
+                </h1>
+                <div class="w-14 h-px bg-white opacity-60 mx-auto my-5 md:my-6"></div>
+                <p class="text-xs md:text-sm font-semibold uppercase tracking-[0.25em] opacity-90 mb-6">Praia de Atalaia · Luís Correia</p>
+                <p class="text-base md:text-lg mb-8 max-w-xl mx-auto opacity-90">
+                    Conforto, café da manhã incluso e o mar logo ali, a poucos passos da areia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://wa.me/5586988226591?text=Ol%C3%A1%21+Estava+no+site+da+Pousada+Carlitus+e+gostaria+de+saber+os+valores+e+disponibilidade+para+me+hospedar+na+Praia+de+Atalaia." target="_blank" class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors shadow-xl w-full sm:w-auto text-center">
+                        Reservar pelo WhatsApp
+                    </a>
+                    <a href="#servicos" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brandText transition-colors shadow-xl w-full sm:w-auto text-center">
+                        Ver Acomodações
+                    </a>
                 </div>
+                <p class="mt-6 text-sm opacity-80 font-medium">Reserva rápida, fácil e sem burocracia direto com nossa equipe.</p>
             </div>
         </section>
 
