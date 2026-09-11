@@ -59,6 +59,14 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; color: #111827; background-color: #FFFFFF; }
         h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Poppins', sans-serif; }
+        /* Hero: em telas largas (desktop), o corte "cover" da foto mostra uma faixa
+           mais baixa da imagem (menos céu), fazendo a emenda com o degradê azul
+           aparecer como uma linha reta. Subimos o enquadramento só a partir do
+           breakpoint md para manter mais céu visível no topo da foto e a fusão
+           suave com a faixa acima. O mobile não é afetado por esta regra. */
+        @media (min-width: 768px) {
+            .hero-photo { background-position: center 15% !important; }
+        }
     </style>
     <!-- JSON-LD Schemas -->
     <script type="application/ld+json">
@@ -289,9 +297,9 @@
             </div>
 
             <!-- Zona inferior: foto atual do hero, com os CTAs -->
-            <div class="relative h-[52vh] md:h-[60vh] min-h-[380px]" style="background-image: url('IMG/pousada-de-frente-para-praia.webp'); background-size: cover; background-position: center 40%; background-repeat: no-repeat;">
-                <!-- Fusão: a última cor do céu "derrete" sobre o topo da foto -->
-                <div class="absolute inset-x-0 top-0 h-20 md:h-28" style="background: linear-gradient(to bottom, #79B4DF 0%, rgba(121,180,223,0) 100%);"></div>
+            <div class="hero-photo relative h-[52vh] md:h-[60vh] min-h-[380px]" style="background-image: url('IMG/pousada-de-frente-para-praia.webp'); background-size: cover; background-position: center 40%; background-repeat: no-repeat;">
+                <!-- Fusão: a última cor do céu "derrete" sobre o topo da foto (faixa maior no desktop, onde o corte "cover" mostra menos céu da foto) -->
+                <div class="absolute inset-x-0 top-0 h-20 md:h-40" style="background: linear-gradient(to bottom, #79B4DF 0%, rgba(121,180,223,0) 100%);"></div>
 
                 <!-- Reforço de leitura para os botões, apenas na base da foto -->
                 <div class="absolute inset-x-0 bottom-0 pt-24 pb-8 md:pb-10" style="background: linear-gradient(to top, rgba(8,12,20,0.65) 0%, rgba(8,12,20,0) 100%);">
